@@ -1,0 +1,47 @@
+<html>
+<body>
+<head>
+  <h2>Browser Tasks</h2>
+
+  <p id="browser"></p>
+  <p id="cookie"></p>
+  <p id="path"></p>
+
+  <input type="button" value = "Load Website" onClick="newPage()">
+  <button onClick="setTimeout(funcStart, 9000);">Click to Learn a Current Event</button>
+
+  <script>
+    document.getElementById("browser").innerHTML = "The full URL of this page is: <br> " + window.location.href;
+
+    document.getElementById("cookie").innerHTML =
+    "Is the cookies enabled or not?  " + navigator.cookieEnabled;
+
+    function goBack(){
+      window.history.back()
+    }
+
+    function goFwd(){
+      window.history.forward()
+    }
+
+    document.getElementById("path").innerHTML = "The browser path of this page is: <br> " + window.location.pathname;
+
+    function newPage(){
+      window.location.assign("http://statal.it.pointpark.edu");
+    }
+
+    function funcStart(){
+      alert('The total US debt is almost 23 trillion dollars (USDebtClock.org)');
+    }
+
+
+  </script>
+
+  <button onClick="goBack()">Go Back</button>
+  <br>
+  <button onClick="goFwd()">Go Forward</button>
+
+
+</body>
+</head>
+</html>

@@ -14,12 +14,15 @@
       this.color = color;
     }
 
+    //prototype this data for vehicle
     Vehicle.prototype.seats = 4;
     Vehicle.prototype.dealership = "Century III Chevrolet";
     Vehicle.prototype.style = "sedan";
 
+     //variable for car
     var car1 = new Vehicle("Chevrolet", "Aveo", 2010, "silver");
 
+    //print to screen
     document.getElementById("constructor").innerHTML = "The first car I will show you is a " + car1.make + " " + car1.model + " " + car1.style +  ", and is from " + car1.year + ". Did you know that it has " + car1.seats + " seats? I can show you the car, but it's at " + car1.dealership ;
 
   </script>

@@ -1,0 +1,23 @@
+<html>
+<body>
+<head>
+  <h2>Methods for Bands</h2>
+
+  <p id="bands"></p>
+
+  <script>
+    var band = {
+      bandName: "Maroon 5",
+      genre: "pop rock",
+      city: "Las Angeles",
+      bandInfo: function(){
+        return this.bandName + ". Did you know that they are from " + this.city + " ?";
+      }
+    };
+    document.getElementById("bands").innerHTML = "A band that I really enjoy is " + band.bandInfo();
+
+  </script>
+
+</body>
+</head>
+</html>

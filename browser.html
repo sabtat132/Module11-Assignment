@@ -2,34 +2,43 @@
 <body>
 <head>
   <h2>Browser Tasks</h2>
-
+  
+  //id's 
   <p id="browser"></p>
   <p id="cookie"></p>
   <p id="path"></p>
-
+  
+  //buttons
   <input type="button" value = "Load Website" onClick="newPage()">
   <button onClick="setTimeout(funcStart, 9000);">Click to Learn a Current Event</button>
 
   <script>
+    //URL
     document.getElementById("browser").innerHTML = "The full URL of this page is: <br> " + window.location.href;
-
+  
+    //cookies
     document.getElementById("cookie").innerHTML =
     "Is the cookies enabled or not?  " + navigator.cookieEnabled;
 
+    //function for go back button
     function goBack(){
       window.history.back()
     }
 
+     //function for go forward button
     function goFwd(){
       window.history.forward()
     }
 
+    //browser path
     document.getElementById("path").innerHTML = "The browser path of this page is: <br> " + window.location.pathname;
 
+    //function to redirect to my personal page
     function newPage(){
       window.location.assign("http://statal.it.pointpark.edu");
     }
 
+    //function timer at 9sec - turns into an alert
     function funcStart(){
       alert('The total US debt is almost 23 trillion dollars (USDebtClock.org)');
     }
@@ -37,6 +46,7 @@
 
   </script>
 
+   //buttons for Go Back and Go Forward
   <button onClick="goBack()">Go Back</button>
   <br>
   <button onClick="goFwd()">Go Forward</button>

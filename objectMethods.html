@@ -6,6 +6,7 @@
   <p id="bands"></p>
 
   <script>
+    //method & function for band
     var band = {
       bandName: "Maroon 5",
       genre: "pop rock",
@@ -14,6 +15,7 @@
         return this.bandName + ". Did you know that they are from " + this.city + " ?";
       }
     };
+    //print to screen
     document.getElementById("bands").innerHTML = "A band that I really enjoy is " + band.bandInfo();
 
   </script>

@@ -2,9 +2,14 @@
 <body>
 <head>
   <h2>Constructors of Vehicles</h2>
-  <p id="constructor"></p>
+  
+  //id for each element - but each associated with function Vehicle  
+  
+  <p id="constructor"></p>      
+  <p id="constructor2"></p>
+  <p id="constructor3"></p>
 
-
+  
   <script>
     function Vehicle(make,model,year,color)
     {
@@ -14,6 +19,7 @@
       this.color = color;
     }
 
+     //variables
     var car1 = new Vehicle("Chevrolet", "Aveo", 2010, "silver");
     var car2 = new Vehicle("GMC", "Terrain",2016, "white");
     var car3 = new Vehicle("Ford", "F150", 2008, "silver");
@@ -21,8 +27,8 @@
 
      //print variable data using function vehicle
     document.getElementById("constructor").innerHTML =  "The first car we have available is a " + car1.make + " " + car1.model + ", and it is only from " + car1.year;
-    document.getElementById("constructor").innerHTML =  "The second car we have available is a " + car2.make + " " + car2.model + ", and it is only from " + car2.year;
-    document.getElementById("constructor").innerHTML =  "The third car we have available is a " + car3.make + " " + car3.model + ", and it is only from " + car3.year;
+    document.getElementById("constructor2").innerHTML =  "The second car we have available is a " + car2.make + " " + car2.model + ", and it is only from " + car2.year;
+    document.getElementById("constructor3").innerHTML =  "The third car we have available is a " + car3.make + " " + car3.model + ", and it is only from " + car3.year;
   </script>
 
 </body>
